@@ -1,0 +1,132 @@
+<!-- CUSTOMER LANDING PAGE  -->
+<!-- CREATE CUSTOMER AND FIND CUSTOMER  -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style>
+      .nav-title {
+        color: white;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      .navbar .navbar-nav .nav-link {
+        color: white;
+        font-size: 1.1em;
+      }
+      .navbar .navbar-nav .nav-link:hover {
+        color: #808080;
+      }
+      @media only screen and (min-width: 960px) {
+        .dropdown:hover .dropdown-menu {
+          display: block;
+          margin-top: 0;
+        }
+        .dropdown .dropdown-menu {
+          display: none;
+        }
+        .dropdown:hover .dropdown-toggle::after {
+          border-bottom: 0.3em solid;
+          border-top: 0;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        .dropdown-toggle.show::after {
+          border-top: 0;
+          border-bottom: 0.3em solid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: black"
+    >
+      <h2 class="nav-title">Droame</h2>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbarToggler4"
+        aria-controls="myNavbarToggler4"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbarToggler4">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Customers
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="createCustomer">Create Customer</a>
+              <a class="dropdown-item" href="searchCustomer"
+                >Search a customer by Id</a
+              >
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="searchAllCustomers"
+                >Search All Customers</a
+              >
+              <a class="dropdown-item" href="deleteCustomer">Delete Customer</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Bookings
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="createBooking">Create Booking</a>
+              <a class="dropdown-item" href="searchBooking"
+                >Search booking by Id</a
+              >
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="searchAllBookings"
+                >Search All Bookings</a
+              >
+              <a class="dropdown-item" href="deleteBooking">Delete Booking</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script src="server.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

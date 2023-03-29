@@ -1,0 +1,10 @@
+h2 {
+  /* border: 2px solid black; */
+  text-align: center;
+  margin-top: 4rem;
+}
+form {
+  /* border: 2px solid black; */
+  padding: 2rem;
+  margin-top: 2rem;
+}
